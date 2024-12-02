@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444699963635",
+    "project_id": "maon-e1e68",
+    "storage_bucket": "maon-e1e68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444699963635:android:034c82115faf19a2194786",
+        "android_client_info": {
+          "package_name": "com.easter.watch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBysk3YjFvvXFhB6-EHvO1awfq41NtP9tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

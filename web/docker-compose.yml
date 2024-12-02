@@ -1,0 +1,8 @@
+version: "3"
+services:
+  react-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./build:/app/build

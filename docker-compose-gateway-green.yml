@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api-gateway-green:
+    build:
+      context: ./back/gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway-green
+    ports:
+      - "8766:8765"
+    networks:
+      - maonnet
+    restart: always
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+
+networks:
+  maonnet:
+    external: true

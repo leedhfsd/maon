@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <color name="real_black">#000000</color>
+    <color name="black">#5E584F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_mandarin">#FDD048</color> <!-- 덜 익은 귤 -->
+    <color name="mandarin">#FFB727</color> <!-- 중간 귤 -->
+    <color name="dark_mandarin">#FFA646</color> <!-- 완전히 익은 귤 -->
+    <color name="light_orange">#FF6F06</color> <!-- 진한 오렌지 -->
+    <color name="nav_orange">#FF740E</color> <!-- navbar용 오렌지 -->
+    <color name="light_grape_fruit">#FA9987</color> <!-- 연한 자몽 -->
+    <color name="grape_fruit">#FE7A58</color> <!-- 자몽 -->
+    <color name="light_beige">#FFF1E2</color> <!-- 연한 베이지 -->
+    <color name="beige">#FFE4C8</color> <!-- 진한 베이지 (모달 버튼용) -->
+    <color name="grey">#B1B1B1</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#81c147</color>
+</resources>

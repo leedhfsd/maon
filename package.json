@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "expo-auth-session": "^5.5.2",
+    "expo-crypto": "^13.0.2",
+    "expo-random": "^14.0.1",
+    "rn-range-slider": "^2.2.2",
+    "zustand": "^5.0.1"
+  }
+}

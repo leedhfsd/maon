@@ -1,0 +1,48 @@
+version: "3"
+services:
+  # blue, green
+  member-blue:
+    build:
+      context: ./back/member
+      dockerfile: Dockerfile
+    container_name: member-blue
+    ports:
+      - "18010:8080"
+    networks:
+      - maonnet
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - SPRING_PROFILES_COLOR=blue
+
+  tournament-blue:
+    build:
+      context: ./back/tournament
+      dockerfile: Dockerfile
+    container_name: tournament-blue
+    ports:
+      - "18020:8080"
+    networks:
+      - maonnet
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - SPRING_PROFILES_COLOR=blue
+
+  route-blue:
+    build:
+      context: ./back/route
+      dockerfile: Dockerfile
+    container_name: route-blue
+    ports:
+      - "18030:8080"
+    networks:
+      - maonnet
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - SPRING_PROFILES_COLOR=blue
+
+networks:
+  maonnet:
+    external: true

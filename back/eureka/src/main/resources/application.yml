@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server
+
+  config:
+    import: "configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8888}"
+
+  cloud:
+    config:
+      name: eureka
+      profile: ${SPRING_PROFILES_ACTIVE:local}
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
